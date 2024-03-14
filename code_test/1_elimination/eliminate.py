@@ -20,10 +20,9 @@ def myelimin():
                             break
                 if flag == 0:
                     remove_ins.append(i)
-        
+        remove_ins.reverse()
         for i in remove_ins:
             del prog['functions'][num]['instrs'][i]
-            remove_ins = [x - 1 for x in remove_ins]
     
     with open("elimination.json", "w") as outfile:
         json.dump(prog, outfile)
