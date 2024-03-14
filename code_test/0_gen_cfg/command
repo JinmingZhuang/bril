@@ -1,0 +1,1 @@
+bril2json <../../test/interp/core/jmp.bril | python3 mycfg.py | dot -Tpng -o cfg.png

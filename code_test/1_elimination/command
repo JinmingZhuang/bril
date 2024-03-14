@@ -1,0 +1,1 @@
+bril2json < add.bril | python3 eliminate.py | bril2txt < elimination.json
